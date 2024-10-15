@@ -1,0 +1,24 @@
+/* Place your CSS styles in this file */
+ body{ background-color: cornsilk;
+ border: 5px solid rgb(214, 181, 187);
+ border-radius:15px; 
+ }
+ ul {list-style-type: none;
+ background-color: azure;
+ border: 5px solid rgb(241, 214, 204); 
+ border-radius: 5px;
+ text-align: center;
+ }
+ li {display:inline;
+ }
+
+h1 {
+    text-align: center;
+    font-family: "Source sans serif ", Sans seri ;
+    font-weight: bold;
+}
+p {font-size: small
+}
+
+img {display: block; 
+margin: auto;}
