@@ -32,8 +32,8 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-  color: #FA4032; /*ganti warna teks nav bar*/
+  font-family: "Playfair DisplayI" ,Figtree, Verdana, Exo 2;
+  color: 973131/*ganti warna teks nav bar*/
   font-weight: 600;
   padding: 8px;
 }
