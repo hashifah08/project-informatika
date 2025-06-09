@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Desain Produk - Caikulo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CARNAVAL</div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="product.html">Desain Produk</a></li>
+      <li><a href="game.html">Produk</a></li>
+    </ul>
+  </nav>
+
+  <!-- Konten Desain Produk -->
+  <div class="produk-container">
+    <h1 class="judul-halaman">Desain Produk</h1>
+
+    <!-- Card 1 -->
+    <div class="card-produk">
+      <h2 class="judul-produk">Caikulo Order</h2>
+      <div class="canva-frame">
+        <iframe loading="lazy"
+          src="https://www.canva.com/design/DAGpZlo4J70/N6vm4XRmnXE4E7JvRoxw1Q/view?embed"
+          allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+      </div>
+      <a href="https://www.canva.com/design/DAGpZlo4J70/N6vm4XRmnXE4E7JvRoxw1Q/view?utm_content=DAGpZlo4J70&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+         target="_blank" rel="noopener" class="canva-link">
+        Carnaval EDP PPT oleh AL FATTAH NARARYA
+      </a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-produk">
+      <h2 class="judul-produk">Caikulo Mix Master</h2>
+      <div class="canva-frame">
+        <iframe loading="lazy"
+          src="https://www.canva.com/design/DAGpvF6dBng/PTsg_i_GxyFa5_UKr7rflg/view?embed"
+          allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+      </div>
+      <a href="https://www.canva.com/design/DAGpvF6dBng/PTsg_i_GxyFa5_UKr7rflg/view?utm_content=DAGpvF6dBng&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+         target="_blank" rel="noopener" class="canva-link">
+        Engineering Design Product oleh Hashifah Ulya
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
