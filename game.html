@@ -1,153 +1,193 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Produk - Caikulo</title>
+  <title>Caikulo - Produk & Game</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Chewy', cursive;
       background: linear-gradient(to bottom, #fff8dc, #ffc1cc);
-    }.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
-  background-color: #FA4032;
-  color: white;
-}
-
-.logo {
-  font-family: 'Chewy', cursive;
-  font-size: 28px;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 24px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.produk-container {
-  max-width: 900px;
-  margin: 40px auto;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  text-align: center;
-}
-
-h1 {
-  font-family: 'Chewy', cursive;
-  color: #FA4032;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.frame-area {
-  width: 100%;
-  max-width: 720px;
-  height: 405px;
-  margin: 0 auto 30px;
-  border: 3px solid #FA4032;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #fff8dc;
-  position: relative;
-}
-
-.minuman-list {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  animation: jalan 20s linear infinite;
-}
-
-@keyframes jalan {
-  0% { left: 100%; }
-  100% { left: -720px; }
-}
-
-.minuman-item {
-  margin: 0 12px;
-  cursor: pointer;
-}
-
-.minuman-item img {
-  width: 100px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.form-input {
-  margin-top: 20px;
-}
-
-input[type="text"] {
-  padding: 10px;
-  font-size: 16px;
-  width: 60%;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.total {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.btn-buy {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: green;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background-color: #FA4032;
+      color: white;
+    }
+    .logo {
+      font-size: 28px;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .produk-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      text-align: center;
+    }
+    h1, h2, p, button, input {
+      font-family: 'Chewy', cursive;
+    }
+    .frame-area {
+      width: 100%;
+      max-width: 720px;
+      height: 405px;
+      margin: 0 auto 30px;
+      border: 3px solid #FA4032;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff8dc;
+      position: relative;
+    }
+    .minuman-list {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: jalan 20s linear infinite;
+    }
+    @keyframes jalan {
+      0% { left: 100%; }
+      100% { left: -720px; }
+    }
+    .minuman-item {
+      margin: 0 12px;
+      cursor: pointer;
+    }
+    .minuman-item img {
+      width: 100px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .form-input {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 60%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .total {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .btn-buy {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .game-frame {
+      max-width: 400px;
+      margin: 50px auto;
+      background: #fff8dc;
+      border: 3px solid #FA4032;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+    }
+    .warna-pilihan button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+    .hasil-warna {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 20px auto;
+      border: 2px solid #333;
+    }
   </style>
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">CARNAVAL</div>
     <ul class="nav-links">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="product.html">Desain Produk</a></li>
-      <li><a href="game.html">Produk</a></li>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Desain Produk</a></li>
+      <li><a href="#">Produk</a></li>
     </ul>
-  </nav>  <div class="produk-container">
-    <h1>Caikulo Order</h1><div class="frame-area">
-  <div class="minuman-list" id="minumanList">
-    <div class="minuman-item" onclick="tambah('Thai Tea')"><img src="thai_tea.png" alt="Thai Tea"></div>
-    <div class="minuman-item" onclick="tambah('Matcha')"><img src="matcha.png" alt="Matcha"></div>
-    <div class="minuman-item" onclick="tambah('Cappuccino')"><img src="cappuccino.png" alt="Cappuccino"></div>
-    <div class="minuman-item" onclick="tambah('Red Velvet')"><img src="red_velvet.png" alt="Red Velvet"></div>
-    <div class="minuman-item" onclick="tambah('Taro')"><img src="taro.png" alt="Taro"></div>
-    <div class="minuman-item" onclick="tambah('Choco Royal')"><img src="choco_royal.png" alt="Choco Royal"></div>
+  </nav>
+
+  <!-- Produk Area -->
+  <div class="produk-container">
+    <h1>Produk</h1>
+    <div class="frame-area">
+      <div class="minuman-list" id="minumanList">
+        <div class="minuman-item" onclick="tambah('Thai Tea')"><img src="thai_tea.png" alt="Thai Tea"></div>
+        <div class="minuman-item" onclick="tambah('Matcha')"><img src="matcha.png" alt="Matcha"></div>
+        <div class="minuman-item" onclick="tambah('Cappuccino')"><img src="cappuccino.png" alt="Cappuccino"></div>
+        <div class="minuman-item" onclick="tambah('Red Velvet')"><img src="red_velvet.png" alt="Red Velvet"></div>
+        <div class="minuman-item" onclick="tambah('Taro')"><img src="taro.png" alt="Taro"></div>
+        <div class="minuman-item" onclick="tambah('Choco Royal')"><img src="choco_royal.png" alt="Choco Royal"></div>
+      </div>
+    </div>
+
+    <div class="form-input">
+      <input type="text" id="nama" placeholder="Masukkan nama pembeli">
+    </div>
+
+    <div class="total" id="totalHarga">Total Harga: Rp0</div>
+    <button class="btn-buy" onclick="checkout()">CHECKOUT</button>
   </div>
-</div>
 
-<div class="form-input">
-  <input type="text" id="nama" placeholder="Masukkan nama pembeli">
-</div>
+  <!-- Game Area -->
+  <div class="game-frame">
+    <h2>Caikulo Mix Game</h2>
+    <p>Pilih rasa untuk dicampur:</p>
+    <select id="rasaSelect" onchange="pilihMinuman(this.value)">
+      <option value="">--Pilih Rasa--</option>
+      <option>Matcha</option>
+      <option>Taro</option>
+      <option>Red Velvet</option>
+      <option>Choco Royal</option>
+      <option>Thai Tea</option>
+      <option>Cappuccino</option>
+    </select>
+    <div style="margin-top: 20px;">Pilih 3 warna:</div>
+    <div class="warna-pilihan">
+      <button style="background:red" onclick="tambahWarna('red')">Merah</button>
+      <button style="background:yellow; color:black" onclick="tambahWarna('yellow')">Kuning</button>
+      <button style="background:blue" onclick="tambahWarna('blue')">Biru</button>
+      <button style="background:black" onclick="tambahWarna('black')">Hitam</button>
+      <button style="background:white; color:black" onclick="tambahWarna('white')">Putih</button>
+      <button style="background:orange" onclick="tambahWarna('orange')">Orange</button>
+    </div>
+    <div class="hasil-warna" id="warnaHasil"></div>
+    <p id="hasilText"></p>
+    <button onclick="resetWarna()">Ulangi</button>
+  </div>
 
-<div class="total" id="totalHarga">Total Harga: Rp0</div>
-<button class="btn-buy" onclick="checkout()">CHECKOUT</button>
-
-  </div>  <script>
+  <script>
+    // Produk
     const pesanan = [];
     const harga = 10000;
 
@@ -171,14 +211,72 @@ input[type="text"] {
       const total = pesanan.length * harga;
       const bonus = total >= 30000 ? "\u2705 Anda dapat 1 minuman GRATIS!" : "\u274C Tidak ada bonus";
 
-            alert(
-              `Nama: ${name}
-      Pesanan: ${pesanan.join(", ")}
-      Total: Rp${total}
-      ${bonus}`
-            );
-
+      alert(`Nama: ${name}\nPesanan: ${pesanan.join(", ")}\nTotal: Rp${total}\n${bonus}`);
       setTimeout(() => location.reload(), 100);
     }
-  </script></body>
+
+    // Game Mix
+    let rasaDipilih = "";
+    let warnaCampur = [];
+
+    const warnaMinuman = {
+      'Matcha': 'green',
+      'Taro': 'violet',
+      'Red Velvet': 'crimson',
+      'Choco Royal': 'brown',
+      'Thai Tea': 'orange',
+      'Cappuccino': 'saddlebrown'
+    };
+
+    const kombinasiBenar = {
+      'Choco Royal': ['red', 'yellow', 'black'],
+      'Matcha': ['yellow', 'blue', 'white'],
+      'Thai Tea': ['yellow', 'red', 'orange'],
+      'Cappuccino': ['red', 'yellow', 'white'],
+      'Taro': ['blue', 'red', 'white'],
+      'Red Velvet': ['red', 'white', 'red']
+    };
+
+    function pilihMinuman(rasa) {
+      rasaDipilih = rasa;
+      warnaCampur = [];
+      document.getElementById("warnaHasil").style.background = "white";
+      document.getElementById("hasilText").innerText = "";
+    }
+
+    function tambahWarna(warna) {
+      if (!rasaDipilih) {
+        alert("Pilih rasa terlebih dahulu!");
+        return;
+      }
+      if (warnaCampur.length < 3) {
+        warnaCampur.push(warna);
+      }
+      if (warnaCampur.length === 3) {
+        campurWarna();
+      }
+    }
+
+    function campurWarna() {
+      const ideal = kombinasiBenar[rasaDipilih];
+      const benar = rasaDipilih === 'Red Velvet'
+        ? warnaCampur.join(',') === ideal.join(',')
+        : warnaCampur.slice().sort().join(',') === ideal.slice().sort().join(',');
+
+      if (benar) {
+        document.getElementById("hasilText").innerText = `✅ Cocok! Warna ${rasaDipilih}`;
+        document.getElementById("warnaHasil").style.background = warnaMinuman[rasaDipilih];
+      } else {
+        document.getElementById("hasilText").innerText = "❌ Salah, ulangi lagi!";
+        document.getElementById("warnaHasil").style.background = "gray";
+      }
+    }
+
+    function resetWarna() {
+      warnaCampur = [];
+      document.getElementById("warnaHasil").style.background = "white";
+      document.getElementById("hasilText").innerText = "";
+    }
+  </script>
+</body>
 </html>
