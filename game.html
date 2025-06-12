@@ -132,7 +132,7 @@
       padding: 20px;
       margin-top: 40px;
     }
-    .btn-huggingface {
+    .btn-huggingface, .btn-colab {
       margin-top: 10px;
       padding: 10px 20px;
       font-size: 16px;
@@ -143,9 +143,20 @@
       border-radius: 10px;
       cursor: pointer;
       text-decoration: none;
+      display: inline-block;
     }
-    .btn-huggingface:hover {
+    .btn-huggingface:hover, .btn-colab:hover {
       background: #ffe4e1;
+    }
+    .iframe-wrapper {
+      margin-top: 30px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      border: none;
+      border-radius: 12px;
     }
   </style>
 </head>
@@ -208,10 +219,19 @@
     <button onclick="resetWarna()">Ulangi</button>
   </div>
 
-  <!-- Footer dengan tombol Hugging Face -->
+  <!-- Hugging Face Embed -->
+  <div class="iframe-wrapper" style="text-align:center;">
+  <h2>CAIKULO</h2>
+  <a href="https://huggingface.co/spaces/hashifahkhail/CAIKULO" class="btn-huggingface" target="_blank">
+    Buka di Hugging Face
+  </a>
+</div>
+
+
+  <!-- Footer dengan tombol Colab -->
   <footer>
-    <p>Lihat versi interaktif Caikulo di Hugging Face:</p>
-    <a href="https://huggingface.co/spaces/hashifahkhail/CAIKULO" target="_blank" class="btn-huggingface">Coba Versi Interaktif</a>
+    <p>Buka versi Google Colab:</p>
+    <a href="https://colab.research.google.com/drive/1bobISdVnshjR7Xz-j5sdKG2LcJ981KDd#scrollTo=Bg1suHAJzl36&line=2&uniqifier=1" target="_blank" class="btn-colab">Buka di Google Colab</a>
   </footer>
 
   <script>
